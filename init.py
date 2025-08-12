@@ -20,7 +20,6 @@ for l in f:
     n = int(l)
     x = ''
     for v, i in m:
-        c = n // v
-        x += i * c
+        x += i * (n // v)
         n %= v
     print(x)
